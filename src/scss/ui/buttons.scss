@@ -1,3 +1,37 @@
-// .btn_base {
+.btn-menu {
+	@include btn_menu;
+	color: #017ee2;
+}
+.btn-menu::before {
+	@include btn_after_before;
+	top: -5px;
+	width: 36px;
+	background: #017ee2;
+}
+.btn-menu::after {
+	@include btn_after_before;
+	bottom: -5px;
+	width: 36px;
+	background: #017ee2;
+}
 
-// }
+.btn-close {
+	@include btn_menu;
+	position: absolute;
+	top: 34px;
+	right: 60px;
+
+	color: #ffffff;
+}
+.btn-close::before {
+	@include btn_after_before;
+	top: -5px;
+	width: 39px;
+	background: #ffffff;
+}
+.btn-close::after {
+	@include btn_after_before;
+	bottom: -5px;
+	width: 39px;
+	background: #ffffff;
+}

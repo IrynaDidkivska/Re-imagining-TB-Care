@@ -1,2 +1,37 @@
 mixin header
 	header.header
+		a(href='')
+			img(src='images/logo.webp', alt='Logo', width='253', height='43')
+		button.btn-menu(type='button', id='menuBtn') MENU
+
+		nav.navbar(id="navbarMenu")
+			button.btn-close(type='button', id='closeBtn') CLOSE
+			ul.nav-list
+				li
+					a(href='#') About Us
+				li
+					a(href='#') Knowledge Hub
+				li
+					a(href='#') Innovators Directory
+				li
+					a(href='#') Application Portal
+				li
+					a(href='#') News & Updates
+			ul.social-list
+				li
+					a(href='')
+						svg.social-icon(width='30', height='30')
+							use(href='images/sprite-icons/sprite.svg#icon-socialmysocialinstagram')
+				li
+					a(href='')
+						svg.social-icon(width='30', height='30')
+							use(href='images/sprite-icons/sprite.svg#icon-socialmysocialfacebook')
+				li
+					a(href='')
+						svg.social-icon(width='30', height='30')
+							use(href='images/sprite-icons/sprite.svg#icon-socialmysocialtwitter')
+
+
+
+				        
+	

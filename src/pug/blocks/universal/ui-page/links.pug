@@ -1,0 +1,14 @@
+-
+	navItems = [
+    { href: '#', text: 'About Us' },
+    { href: '#', text: 'Knowledge Hub' },
+    { href: '#', text: 'Innovators Directory' },
+    { href: '#', text: 'Application Portal' },
+    { href: '#', text: 'News & Updates' },
+   
+  ];
+
+ul.ui_navItems
+	each a, index in links
+		li.ui_links__item
+			a.ui_links__a(href="" class=`nav_ui__btn--mod_${index+1}`)!=a

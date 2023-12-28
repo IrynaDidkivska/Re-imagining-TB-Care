@@ -1,17 +1,9 @@
 //------------------------------------------------------------layout
 .header {
-	position: fixed;
-	top: 0;
-	left: 0;
-
-	height: var(--height-header);
-	width: 100%;
-
-	font-size: 1rem;
-
-	will-change: transform;
-
-	@include z-index(header);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 18px 60px 19px 60px;
 }
 
 //------------------------------------------------------------layout###
