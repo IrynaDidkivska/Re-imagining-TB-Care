@@ -266,14 +266,16 @@ mixin social(socialArray)
 					href='#',
 					class=`${mod_link}`,
 					target='_blank'
+					label=`${mod_link}`
 				)
 					+icon(item.name_icon, item.mod_icon)
 
 //- works
 mixin icon(name, mod)
 	- mod = mod || '';
-	svg(class=`icon icon_${name} ${mod}`)
-		use(xlink:href=`${assetsImage}sprite/sprite.svg#${name}`)
+	svg(class=`icon icon_${name} ${mod}` )
+		use(xlink:href=`${assetsImage}sprite-icons/sprite.svg#${name}`)
+		
 
 mixin pagination(config)
 	- config.mod = config.mod || '';

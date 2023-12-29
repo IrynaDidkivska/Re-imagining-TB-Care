@@ -74,14 +74,15 @@ body {
 }
 
 a {
+	@include transition_all;
 	text-decoration: none;
 	color: inherit;
 	cursor: pointer;
-	transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	&:hover,
-	&:focus {
-		text-decoration: underline;
-	}
+
+	// &:hover,
+	// &:focus {
+	// 	text-decoration: underline;
+	// }
 }
 
 // for wp

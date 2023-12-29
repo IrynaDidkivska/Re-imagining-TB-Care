@@ -47,12 +47,13 @@
 @mixin btn_menu {
 	position: relative;
 	width: 100%;
-	height: 12.89px;
+	height: 0.81rem;
 	font-family: 'Roboto', sans-serif;
-	font-size: 11px;
+	font-size: 0.69rem;
 	font-weight: 900;
 	text-align: right;
-	letter-spacing: 0.98214287px;
+	text-transform: uppercase;
+	letter-spacing: -0.02rem;
 	color: #017ee2;
 	background-color: transparent;
 	outline: transparent;

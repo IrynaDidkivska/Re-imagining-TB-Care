@@ -2,34 +2,27 @@ mixin header
 	header.header
 		a(href='')
 			img(src='images/logo.webp', alt='Logo', width='253', height='43')
-		button.btn-menu(type='button', id='menuBtn') MENU
+		button.btn__menu(type='button', id='menuBtn') Menu
 
 		nav.navbar(id="navbarMenu")
-			button.btn-close(type='button', id='closeBtn') CLOSE
-			ul.nav-list
-				li
-					a(href='#') About Us
-				li
-					a(href='#') Knowledge Hub
-				li
-					a(href='#') Innovators Directory
-				li
-					a(href='#') Application Portal
-				li
-					a(href='#') News & Updates
-			ul.social-list
-				li
-					a(href='')
-						svg.social-icon(width='30', height='30')
-							use(href='images/sprite-icons/sprite.svg#icon-socialmysocialinstagram')
-				li
-					a(href='')
-						svg.social-icon(width='30', height='30')
-							use(href='images/sprite-icons/sprite.svg#icon-socialmysocialfacebook')
-				li
-					a(href='')
-						svg.social-icon(width='30', height='30')
-							use(href='images/sprite-icons/sprite.svg#icon-socialmysocialtwitter')
+			button.btn__close(type='button', id='closeBtn') Close
+			+menu({    
+				gl_class: 'nav',
+    			gl_mod: '',
+    			items: [
+        			{ title: 'About Us', url: '#' },
+        			{ title: 'Knowledge Hub', url: '#' },
+        			{ title: 'Innovators Directory', url: '#' },
+        			{ title: 'Application Portal', url: '#' },
+        			{ title: 'News & Updates', url: '#' }
+    				]})
+			+social({gl_mod: '',items: [
+        			{ name_icon:'instagram',  name:'instagram'},
+        			{  name_icon:'facebook' ,  name:'facebook'},
+					{ name_icon:'twitter' ,  name:'twitter'},
+    				]})
+
+
 
 
 
