@@ -2,10 +2,9 @@ mixin header
 	header.header
 		a(href='')
 			img.logo__img(src='images/logo.webp', alt='Logo', width='253', height='43')
-		button.btn__menu(type='button', id='menuBtn') Menu
+		button.btn__menu(type='button') Menu
 
-		nav.navbar(id="navbarMenu")
-			button.btn__close(type='button', id='closeBtn') Close
+		nav.navbar
 			+menu({    
 				gl_class: 'nav',
     			gl_mod: '',

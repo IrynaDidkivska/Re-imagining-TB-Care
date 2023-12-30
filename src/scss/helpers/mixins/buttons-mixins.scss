@@ -58,6 +58,7 @@
 	color: $color_text_accent;
 	@include transparent;
 	cursor: pointer;
+	z-index: 200;
 	@include transition_all;
 
 	&:hover,

@@ -15,22 +15,25 @@
 	background: $modal_bg;
 }
 
-.btn__close {
+.btn__menu.toggle {
 	@include btn_menu;
-	position: absolute;
-	top: 2.13rem;
-	right: 3.75rem;
-	color: #ffffff;
+	min-width: 2.44rem;
+	color: $color_text_base;
+
+	@include bp($point_1, min) {
+		top: 2.13rem;
+		right: 3.75rem;
+	}
 }
-.btn__close::before {
+.btn__menu.toggle::before {
 	@include btn_after_before;
 	top: -0.31rem;
 	width: 2.44rem;
-	background: #ffffff;
+	background: $body_bg;
 }
-.btn__close::after {
+.btn__menu.toggle::after {
 	@include btn_after_before;
 	bottom: -0.31rem;
 	width: 2.44rem;
-	background: #ffffff;
+	background: $body_bg;
 }
