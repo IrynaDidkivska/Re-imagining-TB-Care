@@ -19,7 +19,6 @@ Thumbs.db
 
 npm-debug.log
 
-/dist
 build/
 source/
 public/

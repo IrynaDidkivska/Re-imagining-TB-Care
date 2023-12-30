@@ -19,11 +19,6 @@
 	@include btn_menu;
 	min-width: 2.44rem;
 	color: $color_text_base;
-
-	@include bp($point_1, min) {
-		top: 2.13rem;
-		right: 3.75rem;
-	}
 }
 .btn__menu.toggle::before {
 	@include btn_after_before;
