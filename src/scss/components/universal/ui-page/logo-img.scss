@@ -1,0 +1,8 @@
+.logo__img {
+	width: 9.48rem;
+	height: 1.61rem;
+	@include bp($point_1, min) {
+		width: 15.85rem;
+		height: 2.69rem;
+	}
+}

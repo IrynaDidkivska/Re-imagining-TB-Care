@@ -1,16 +1,23 @@
 //---------------------------------------------fonts
 $font_path: '../fonts/';
-$font_1: 'RobotoCondensed', sans-serif;
-$font_size_base: 1.6rem;
+$font_1: 'Roboto', sans-serif;
+$font_size_base: 1rem;
 //---------------------------------------------fonts###
 
 //---------------------------------------------colors
 $white: #fff;
 $black: #000;
+$green: #83e93f;
+$red: #e20119;
+$blue: #017ee2;
 
-$color_text_base: $black;
+$color_text_base: $white;
+$color_text_accent: $blue;
 $color_link_base: #4aa3df;
 $body_bg: $white;
+$modal_bg: $blue;
+$accent_primary: $green;
+$accent_secindery: $red;
 //---------------------------------------------colors###
 
 //---------------------------------------------z-index
@@ -31,7 +38,7 @@ $gl_radius: 0.5rem;
 //---------------------------------------------global values###
 
 //---------------------------------------------media points
-$point_1: 1200px;
+$point_1: 1280px;
 $point_2: 1024px;
 $point_3: 1023.5px;
 $point_4: 768px;

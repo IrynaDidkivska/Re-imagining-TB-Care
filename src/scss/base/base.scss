@@ -14,12 +14,12 @@
 
 html {
 	height: 100%;
-	font: 400 calc(100vw / 1920 * 10) / 1.33 $font_1;
+	// font: 400 calc(100vw / 1920 * 10) / 1.33 $font_2;
+	font: 400 16px $font_1;
 }
 
 body {
 	position: relative;
-
 	display: flex;
 	height: 100%;
 

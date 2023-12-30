@@ -40,3 +40,9 @@
 		pointer-events: initial;
 	}
 }
+
+@mixin transparent {
+	background-color: transparent;
+	outline: transparent;
+	border: transparent;
+}

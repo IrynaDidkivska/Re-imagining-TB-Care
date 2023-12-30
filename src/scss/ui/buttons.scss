@@ -1,37 +1,36 @@
 .btn__menu {
 	@include btn_menu;
-	color: #017ee2;
+	color: $color_text_accent;
 }
 .btn__menu::before {
 	@include btn_after_before;
-	top: -5px;
-	width: 36px;
-	background: #017ee2;
+	top: -0.31rem;
+	width: 2.25rem;
+	background: $modal_bg;
 }
 .btn__menu::after {
 	@include btn_after_before;
-	bottom: -5px;
-	width: 36px;
-	background: #017ee2;
+	bottom: -0.31rem;
+	width: 2.25rem;
+	background: $modal_bg;
 }
 
 .btn__close {
 	@include btn_menu;
 	position: absolute;
-	top: 34px;
-	right: 60px;
-
+	top: 2.13rem;
+	right: 3.75rem;
 	color: #ffffff;
 }
 .btn__close::before {
 	@include btn_after_before;
-	top: -5px;
-	width: 39px;
+	top: -0.31rem;
+	width: 2.44rem;
 	background: #ffffff;
 }
 .btn__close::after {
 	@include btn_after_before;
-	bottom: -5px;
-	width: 39px;
+	bottom: -0.31rem;
+	width: 2.44rem;
 	background: #ffffff;
 }
